@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./register.html" method="post">
+        <div>
+            <label for="username">username</label>
+            <input type="text" id="sai" name="username" pattern="[a-zA-Z\d-.]{5,15}" title="allows only small letters,capital letters,digits and special characterslike (_,.)"><br>
+            </div><br>
+            <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="passwords" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!$^@#%&]).{8,16}" title="small letters,special characters like(_,.)"><br>
+            </div><br>
+            <div>
+                <label for="email">email</label>
+                <input type="text" id="email" name="email" pattern="[a-z\d._]+@[a-z]+\.[a-z]{2,}$" title="small letters,numbers,special characters like($.,_)"><br>
+            </div><br>
+            <div>
+                <label for="phone number">phonenumber</label>
+                <input type="text" id="phone number" name="phone number" pattern="\+91[6-9]\d{9}" title="number" maxlength="13"><br>
+            </div><br>
+            <div>
+                <label for="DOB">DOB</label>
+                <input type="text" id="DOB" name="DOB" pattern="[0-3]-[0-9]-\d{4}" title="number"><br>
+            </div><br>
+            <div>
+                <label for="state">state drop down</label>
+                <select name="state" id="state">
+                <option value="telangana">telangana</option>
+                <option value="jayashakar">jayashankar</option>
+                <option value="karimnager">karimnagar</option>
+                <option value="siddipet">siddipet</option>
+                <option value="khammam">khammam</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="city">city drop down data list</label>
+                <input list="citys"id="city" name="city">
+                <datalist id="citys">
+                    <option value="Hyderabad">
+                    <option value="chennai">
+                    <option value="Benguluru">
+                </datalist>
+            </div><br>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+    
+    
+    
+    
+
+
+
+</body>
+</html>
